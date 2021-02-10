@@ -14,6 +14,6 @@ This addon template allows you to modify the main menu of ARMA3 by changing the 
 
 4- Build a pbo of \mainmenu\
 
-5- Move the mainmenu.pbo in your arma path in \@mainmenu\Addons\ path
+5- Move the mainmenu.pbo in your arma path in \yourarma3path\@mainmenu\Addons\
 
 6- launch Arma with @mainmenu addons loaded
