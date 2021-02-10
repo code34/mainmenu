@@ -17,6 +17,6 @@ showCinemaBorder false;
 
 while {true} do
 {
-	_video = ["mainmenu\scenes\mainmenu.stratis\stargate.ogv"] spawn BIS_fnc_playVideo;
+	_video = ["mainmenu\scenes\mainmenu.stratis\myvideo.ogv"] spawn BIS_fnc_playVideo;
 	waitUntil {scriptDone _video};
 };
