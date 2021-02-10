@@ -12,8 +12,8 @@ This addon template allows you to modify the main menu of ARMA3 by changing the 
 
 3- Use armatool to binarize the config.cpp to config.bin
 
-4- Build a pbo of \arma3_mainmenu\
+4- Build a pbo of \mainmenu\
 
-5- Move the pbo in your arma path in \@mainmenu\Addons\ path
+5- Move the mainmenu.pbo in your arma path in \@mainmenu\Addons\ path
 
 6- launch Arma with @mainmenu addons loaded
