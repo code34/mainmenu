@@ -1,40 +1,18 @@
-# Armago
+# Arma3 Main menu
 
-Arma Golang Extension 32/64 bits
+The minimal requirement to build a main menu with Arma3
 
-The minimal requirement to build a good & nice GOLANG .dll or .so extension with ARMA3 :)
-
-This template extension complete those jobs:
-- receive ARMA input
-- by default, return an asynchrone result through "ExtensionCallback" of arma handler
-- or return a synchrone result throught callExtension arma function (if extensionCallbackFnc is unset)
+This template complete those jobs:
+- Configure a scene for Stratis map
 
 ## Requirements & Build
 
-1- install the 32/64bits TDD gcc compiler on your machine
+1- Configure the config.ccp & \arma3_mainmenu\scenes\mainmenu.stratis\initintro.sqf
 
-https://jmeubank.github.io/tdm-gcc/
+2- Use armatool to binarize the config.cpp to config.bin
 
-2- use armago as your entrie point template to develop your own extension :)
+3- Build a pbo of \arma3_mainmenu\
 
-3- build your extension with this command line :
+4- Move the pbo in your arma path in \@mainmenu\Addons\ path
 
-32bits version
-```
-$ENV:GOARCH = 386
-$ENV:CGO_ENABLED = 1
-go build -o armago.dll -buildmode=c-shared .
-```
-
-64bits version
-```
-$ENV:GOARCH = "amd64"
-$ENV:CGO_ENABLED = 1
-go build -o armago_x64.dll -buildmode=c-shared .
-```
-
-4- Call your extension from Arma
-```
-addMissionEventHandler ["ExtensionCallback", {systemChat format ["%1", _this];}];
-"armago" callExtension "myfunction";
-```
+5- launch Arma with @mainmenu addons loaded
