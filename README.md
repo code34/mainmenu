@@ -2,17 +2,18 @@
 
 The minimal requirement to build a main menu with Arma3
 
-This template complete those jobs:
-- Configure a scene for Stratis map
+This addon template allows you to modify the main menu of ARMA3 by changing the background with a video of your choice, or to make other modifications from a script.
 
 ## Requirements & Build
 
 1- Configure the config.ccp & \arma3_mainmenu\scenes\mainmenu.stratis\initintro.sqf
 
-2- Use armatool to binarize the config.cpp to config.bin
+2 - Put your OGV video in mainmenu\scenes\mainmenu.stratis
 
-3- Build a pbo of \arma3_mainmenu\
+3- Use armatool to binarize the config.cpp to config.bin
 
-4- Move the pbo in your arma path in \@mainmenu\Addons\ path
+4- Build a pbo of \arma3_mainmenu\
 
-5- launch Arma with @mainmenu addons loaded
+5- Move the pbo in your arma path in \@mainmenu\Addons\ path
+
+6- launch Arma with @mainmenu addons loaded
